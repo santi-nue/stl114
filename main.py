@@ -80,4 +80,4 @@ def main(start_url):
 
 if __name__ == '__main__':
     # Replace with your starting URL
-    main("http://www.spanishbeercoasters.es")
+    main("http://www.spanishbeercoasters.es/Coleccion_Mundial.html")
