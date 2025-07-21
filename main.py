@@ -29,6 +29,7 @@ def download_and_store(image_url):
         # Download image data
         with urllib.request.urlopen(image_url) as response:
             data = response.read()
+            print(image_url) 
             # Store in SQLite
             cursor.execute('INSERT OR IGNORE INTO images (url, data) VALUES (?, ?)', (image_url, data))
             conn.commit()
